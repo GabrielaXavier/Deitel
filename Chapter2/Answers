@@ -1,0 +1,475 @@
+2.7 - 
+a) Inserimos comentários para documentar programas e aprimorar sua legibilidade. Jva possui três tipos de comentarios:
+  // - comentario de fim de linha;
+  /* */ - comentário tradicional;
+  //* */ - comentário Javadoc, que gera uma documentação em HTML;
+  
+b)Condição do tipo if;
+
+c)Os cálculos são realizados pelas instruções aritméticas;
+
+d)divisao (/) e resto (%)  - operadores aritmeticos com mesma precedencia da multiplicacao (*);
+
+e)Quando parênteses estão aninhados, o conjunto de parênteses interno é avaliado primeiro;
+
+f)Uma variavel é uma posicação na mamoria do computador que pode conter diferentes valores durante a execuçãode um programa;
+
+2.8 - 
+a) System.out.print("Enter a integer: ");
+b) a = b * c;
+c)//Este programa realiza o calculo de exemplo de folha de pagamento
+
+2.9
+a)Verdadeiro, os operadores javas são avaliados da esquerda para a direita exceto o operador =(atribuição);
+
+b) Verdadeiro, nomes de variaveis somente são invalidos quando iniciam com um carcter numeral ou quando possui espaços em banco entre os caracteres;
+
+c)Verdadeiro, uma expressão java sem parenteses é avaliada da esquerda para a direita;
+
+d)Falso - o nome h22 é um nome de variavel valido;
+
+2.10 Supondo x=2 e y=3. As seguintes instruções exibem:
+a) System.out.printf( “x = %d\n” , x ); x = 2;
+
+b)System.out.printf( “value of %c + %d\n” , x, x, (x + x) ); Value of 2 + 2 is 4;
+
+c)System.out.printf( “ x = ” ); x = ;
+
+d)System.out.printf( “%d = %d\n”, ( x + y ), ( y + x ); 5 = 5;
+
+2.11 Quais instruções Java a seguir contem variáveis cujos valores são modificados?
+a)p = i + j + k + 7;
+
+d)value = input.nextInt( );
+
+2.12 dado y= ax³ + 7 quais instruçoes java são corretas?
+
+a) y= a * x * x * x + 7;
+
+e) y= (a *  x) * x * x  + 7;
+
+e) y= a * ( x * x * x ) + 7;
+
+2.13 Ordem de avaliação dos operadores e valor de x
+a) x = 7 + 3 * 6 / 2 - 1 -> *, /, +, - -> x=15;
+
+b) x = 2 % 2 + 2 * 2 - 2 / 2 -> %, *, /, +, - -> x=3;
+
+c) x = (3 * 9 * (3 + (9 * 3 / ( 3 ) ) ) ) -> /, *, +, *, * -> x=324;
+
+2.14 programa para exibir os numeros de 1 a 4 separados por espaços contendo 1 println 4 print e 1 printf
+a) System.out.println(a + " " + b + " " + c + " " + d);
+
+b) System.out.print(a + " ");
+   System.out.print(b + " ");
+   System.out.print(c + " ");
+   System.out.print(d + " ");
+   
+c)System.out.printf("%d %d %d %d\n", a, b, c, d);
+
+2.15
+public class teste {
+    public static void main(String[] args){
+
+        Scanner input = new Scanner(System.in);
+        int num1, num2;
+
+        System.out.print("Primeiro numero: ");
+        num1 = input.nextInt();
+        System.out.print("Segundo numero: ");
+        num2 = input.nextInt();
+
+        System.out.printf("%d + %d = %d%n", num1, num2, (num1 + num2));
+        System.out.printf("%d * %d = %d%n", num1, num2, (num1 * num2));
+        System.out.printf("%d - %d = %d%n", num1, num2, (num1 - num2));
+        System.out.printf("%d / %d = %d%n", num1, num2, (num1 / num2));
+
+    }
+}
+
+2.16
+
+public class teste {
+    public static void main(String[] args){
+
+        Scanner input = new Scanner(System.in);
+        int num1, num2;
+
+        System.out.print("Primeiro numero: ");
+        num1 = input.nextInt();
+        System.out.print("Segundo numero: ");
+        num2 = input.nextInt();
+
+       if(num1 > num2){
+           System.out.printf("%d is larger %n", num1);
+       }
+       if(num2 > num1){
+           System.out.printf("%d is larger %n", num2);
+        }
+        if(num2 == num1){
+            System.out.println("This numbers are equals");
+        }
+    }
+}
+
+2.17
+
+public class teste {
+    public static void main(String[] args){
+
+        Scanner input = new Scanner(System.in);
+        int num1, num2, num3;
+
+        System.out.print("Primeiro numero: ");
+        num1 = input.nextInt();
+        System.out.print("Segundo numero: ");
+        num2 = input.nextInt();
+        System.out.print("Terceiro numero: ");
+        num3 = input.nextInt();
+
+        System.out.printf("%d + %d + %d = %d%n", num1,num2,num3,(num1+num2+num3));
+        System.out.printf("(%d + %d + %d)/3 = %d%n", num1,num2,num3,((num1+num2+num3)/3));
+        System.out.printf("%d * %d * %d = %d%n", num1,num2,num3,(num1+num2+num3));
+
+       if(num1 > num2 && num1 > num3){
+           System.out.printf("%d is larger %n", num1);
+       }
+       if(num2 > num1 && num2 > num3){
+           System.out.printf("%d is larger %n", num2);
+        }
+        if(num3 > num1 && num3 > num2){
+            System.out.printf("%d is larger %n", num3);
+        }
+
+        if(num1 < num2 && num1 < num3){
+            System.out.printf("%d is smaller %n", num1);
+        }
+        if(num2 < num1 && num2 < num3){
+            System.out.printf("%d is smaller %n", num2);
+        }
+        if(num3 < num1 && num3 < num2){
+            System.out.printf("%d is smaller %n", num3);
+        }
+    }
+}
+
+2.18
+public class teste {
+    public static void main(String[] args) {
+        System.out.println ("This Application Displays A Box, An Oval, An Arrow And A Diamond Using Asterisks (*)");
+        System.out.println("\t**********\t\t *** \t\t\t *\t\t *");
+        System.out.println("\t* *\t\t * *\t\t ***\t\t * *");
+        System.out.println("\t* *\t\t* *\t\t*****\t\t * *");
+        System.out.println("\t* *\t\t* *\t\t *\t\t* *");
+        System.out.println("\t* *\t\t* *\t\t *\t * *");
+        System.out.println("\t* *\t\t* *\t\t *\t\t* *");
+        System.out.println("\t* *\t\t* *\t\t *\t\t * *");
+        System.out.println("\t* *\t\t * * \t\t *\t\t * *");
+        System.out.println("\t**********\t\t *** \t\t\t *\t\t *");
+         
+    }
+}
+
+2.19
+System.out.printf("*%n**%n***%n****%n*****%n");
+
+*
+**
+***
+****
+*****
+
+2.20
+
+System.out.println("*");
+System.out.println("***");
+System.out.println("*****");
+System.out.println("****");
+System.out.println("**");
+
+*
+***
+*****
+****
+**
+
+2.21
+System.out.print("*");
+System.out.print("***");
+System.out.print("*****");
+System.out.print("****");
+System.out.println("**");
+***************
+
+2.22
+System.out.print("*");
+System.out.println("***");
+System.out.println("*****");
+System.out.print("****");
+System.out.println("**");
+
+****
+*****
+******
+
+2.23
+
+System.out.printf("%s%n%s%n%s%n","*","***","*****");
+*
+***
+*****
+2.24
+public class teste {
+    public static void main(String[] args) {
+
+        int num1=11, num2=3, num3=7, num4=2, num5=0;
+
+        if(num1 > num2 && num1 > num3 && num1 > num4 && num1 > num5){
+            System.out.printf("%d is larger %n", num1);
+        }
+        if(num2 > num1 && num2 > num3 && num2 > num4 && num2 > num5){
+            System.out.printf("%d is larger %n", num2);
+        }
+        if(num3 > num1 && num3 > num2 && num3 > num4 && num3 > num5){
+            System.out.printf("%d is larger %n", num3);
+        }
+        if(num4 > num1 && num4 > num2 && num4 > num3 && num4 > num5){
+            System.out.printf("%d is larger %n", num4);
+        }
+        if(num4 > num1 && num4 > num2 && num4 > num3 && num5 > num4){
+            System.out.printf("%d is larger %n", num5);
+        }
+
+        if(num1 < num2 && num1 < num3 && num1 < num4 && num1 < num5){
+            System.out.printf("%d is smaller %n", num1);
+        }
+        if(num2 < num1 && num2 < num3 && num2 < num4 && num2 < num5){
+            System.out.printf("%d is smaller %n", num2);
+        }
+        if(num3 < num1 && num3 < num2 && num3 < num4 && num3 < num5){
+            System.out.printf("%d is smaller %n", num3);
+        }
+        if(num4 < num1 && num4 < num2 && num4 < num3 && num4 < num5){
+            System.out.printf("%d is smaller %n", num4);
+        }
+        if(num5 < num1 && num5 < num2 && num5 < num3 && num5 < num4){
+            System.out.printf("%d is smaller %n", num5);
+        }
+    }
+}
+
+2.25
+public class teste {
+    public static void main(String[] args) {
+
+        int num1=11;
+        int num2=4;
+
+        if(num1 % 2==0){
+            System.out.printf("%d is even%n", num1);
+        }
+        if(num1 % 2!=0){
+            System.out.printf("%d is odd%n", num1);
+        }
+
+        if(num2 % 2==0){
+            System.out.printf("%d is even%n", num2);
+        }
+        if(num2 % 2!=0){
+            System.out.printf("%d is odd%n", num2);
+        }
+    }
+}
+
+2.26
+public class teste {
+    public static void main(String[] args) {
+
+        int num1=12;
+        int num2=4;
+
+        if(num1 % num1==0){
+            System.out.printf("%d it's multiple of %d%n", num1,num2);
+        }
+        if(num1 % num1!=0){
+            System.out.printf("%d it isn't multiple of %d%n", num1,num2);
+        }
+    }
+}
+
+2.27
+
+public class teste {
+    public static void main(String[] args) {
+    
+        System.out.println("* * * * * * * * ");
+        System.out.println(" * * * * * * * *");
+        System.out.println("* * * * * * * * ");
+        System.out.println(" * * * * * * * *");
+        System.out.println("* * * * * * * * ");
+        System.out.println(" * * * * * * * *");
+        System.out.println("* * * * * * * * ");
+        System.out.println(" * * * * * * * *");
+
+    }
+}
+
+2.28
+
+public class teste {
+    public static void main(String[] args){
+
+        Scanner input = new Scanner(System.in);
+        int r, dia;
+        double circ, vol;
+
+        System.out.print("Insert the radio: ");
+        r = input.nextInt();
+
+        dia = 2 * r;
+        circ = 2 * (Math.PI * r);
+        vol = Math.PI * (r * r);
+
+            System.out.printf("%d is the diameter %n", dia);
+            System.out.printf("%f is the circumference %n", circ);
+            System.out.printf("%f is the volume %n", vol);
+
+    }
+}
+2.29
+
+public class teste {
+    public static void main(String[] args){
+
+        System.out.printf("The character %c has the value %d%n", 'A', ((int) 'A'));
+        System.out.printf("The character %c has the value %d%n", 'B', ((int) 'B'));
+        System.out.printf("The character %c has the value %d%n", 'C', ((int) 'C'));
+        System.out.printf("The character %c has the value %d%n", 'a', ((int) 'a'));
+        System.out.printf("The character %c has the value %d%n", 'b', ((int) 'b'));
+        System.out.printf("The character %c has the value %d%n", 'c', ((int) 'c'));
+        System.out.printf("The character %c has the value %d%n", '0', ((int) '0'));
+        System.out.printf("The character %c has the value %d%n", '1', ((int) '1'));
+        System.out.printf("The character %c has the value %d%n", '2', ((int) '2'));
+        System.out.printf("The character %c has the value %d%n", '$', ((int) '$'));
+        System.out.printf("The character %c has the value %d%n", '*', ((int) '*'));
+        System.out.printf("The character %c has the value %d%n", '+', ((int) '+'));
+        System.out.printf("The character %c has the value %d%n", '/', ((int) '/'));
+        System.out.printf("The character %c has the value %d%n", ' ', ((int) ' '));
+    }
+}
+
+2.30 User enter five numbers and show them with space deitel
+public class teste {
+    public static void main(String[] args){
+
+        Scanner input = new Scanner(System.in);
+        int reminder, aux;
+        String answer;
+
+        System.out.print("Enter with a number that contains five digits: ");
+        reminder = input.nextInt();
+        aux = reminder/10000;
+        reminder = reminder%10000;
+        answer = aux+" ";
+        aux = reminder/1000;
+        reminder = reminder%1000;
+        answer = answer + aux+" ";
+        aux = reminder/100;
+        reminder = reminder%100;
+        answer = answer + aux+" ";
+        aux = reminder/10;
+        reminder = reminder%10;
+        answer = answer + aux+" ";
+        aux = reminder/1;
+        reminder = reminder%1;
+        answer = answer + aux+" ";
+        System.out.print(answer);
+
+    }
+}
+
+2.31 - 
+public class Teste {
+
+    public static void main(String[] args)
+    {
+        System.out.println("number\tsquare\tcube");
+        System.out.printf("%d\t\t%d\t\t%d%n",0,(0*0),(0*0*0));
+        System.out.printf("%d\t\t%d\t\t%d%n",1,(1*1),(1*1*1));
+        System.out.printf("%d\t\t%d\t\t%d%n",2,(2*2),(2*2*2));
+        System.out.printf("%d\t\t%d\t\t%d%n",3,(3*3),(3*3*3));
+        System.out.printf("%d\t\t%d\t\t%d%n",4,(4*4),(4*4*4));
+        System.out.printf("%d\t\t%d\t\t%d%n",5,(5*5),(5*5*5));
+        System.out.printf("%d\t\t%d\t\t%d%n",6,(6*6),(6*6*6));
+        System.out.printf("%d\t\t%d\t\t%d%n",7,(7*7),(7*7*7));
+        System.out.printf("%d\t\t%d\t\t%d%n",8,(8*8),(8*8*8));
+        System.out.printf("%d\t\t%d\t\t%d%n",9,(9*9),(9*9*9));
+        System.out.printf("%d\t\t%d\t\t%d%n",10,(10*10),(10*10*10));
+
+    }
+}
+
+2.32
+public class Teste {
+
+    public static void main(String[] args) {
+        int number1 = -2, number2 = -1, number3 = 0, number4 = 1, number5 = 2;
+        int countNeg = 0, count0 = 0, countPos = 0;
+
+        if (number1 < 0) {
+            countNeg = countNeg + 1;
+        }
+        if (number1 == 0) {
+            count0 = count0 + 1;
+        }
+
+        if (number1 > 0) {
+            countPos = countPos + 1;
+        }
+        if (number2 < 0) {
+            countNeg = countNeg + 1;
+        }
+        if (number2 == 0) {
+            count0 = count0 + 1;
+        }
+
+        if (number2 > 0) {
+            countPos = countPos + 1;
+        }
+        if (number3 < 0) {
+            countNeg = countNeg + 1;
+        }
+        if (number3 == 0) {
+            count0 = count0 + 1;
+        }
+
+        if (number3 > 0) {
+            countPos = countPos + 1;
+        }
+        if (number4 < 0) {
+            countNeg = countNeg + 1;
+        }
+        if (number4 == 0) {
+            count0 = count0 + 1;
+        }
+
+        if (number4 > 0) {
+            countPos = countPos + 1;
+        }
+        if (number5 < 0) {
+            countNeg = countNeg + 1;
+        }
+        if (number5 == 0) {
+            count0 = count0 + 1;
+        }
+
+        if (number5 > 0) {
+            countPos = countPos + 1;
+        }
+        
+        System.out.printf("%d negative number(s) %n", countNeg);
+        System.out.printf("%d zero(s) %n", count0);
+        System.out.printf("%d positive number(s) %n", countPos);
+
+    }
+}
